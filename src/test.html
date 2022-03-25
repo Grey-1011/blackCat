@@ -103,6 +103,13 @@
             outline: 2px solid #4285f4;
         }
 
+        @media(max-width < 500px) {
+            #buttons>button:focus {
+                outline: none;
+                border: 2px solid #4285f4;
+            }
+        }
+
         #buttons>button:not(:disabled) {
             box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
         }
@@ -122,7 +129,6 @@
         #buttons>button:disabled {
             box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
         }
-    
     </style>
     <div id="html">
         <div class="skin">
